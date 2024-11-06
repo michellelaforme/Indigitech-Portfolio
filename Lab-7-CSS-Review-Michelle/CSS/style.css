@@ -1,0 +1,82 @@
+/* <!-- Michelle La Forme, IFA WD INT. Lab 7, 6 Nov 2024 --> */
+@charset "utf-8";
+
+/* general styles */
+body {
+  background-color: rgb(185, 140, 185);
+  color: rgb(63, 26, 63);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: lighter;
+}
+
+img {
+  max-width: 20%;
+}
+
+/* specific styles */
+
+header {
+  background-color: rgb(63, 26, 63);
+  color: white;
+}
+
+header > h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+header > p {
+  font-style: italic;
+  text-align: center;
+}
+
+#cart {
+  text-align: right;
+  padding-right: 5%;
+}
+
+li {
+  list-style-type: "\1F319";
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+}
+
+li > a:hover {
+  color: rgb(185, 140, 185);
+  font-style: italic;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+#reader {
+  text-align: right;
+}
+
+#events {
+  background-color: rgb(63, 26, 63);
+  color: white;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h5 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: rgb(63, 26, 63);
+  color: rgb(185, 140, 185);
+}
