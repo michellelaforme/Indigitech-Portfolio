@@ -1,0 +1,11 @@
+/* Michelle La Forme, IFA WD INT. Assignment 1, 5 Nov 2024 */
+@charset "utf-8";
+
+/* external style */
+.special-box {
+  border: 5px solid green;
+  padding: 20px;
+  background-color: lightskyblue;
+}
+
+/* external stylesheet -- benefits are that you can apply styles across multiple pages and contain all styling to a separate page instead of having it clutter up the html. personally i prefer to do external style over the others */

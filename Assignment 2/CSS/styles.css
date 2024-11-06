@@ -1,0 +1,48 @@
+/* Michelle La Forme, IFA WD INT. Assignment 2, 6 Nov 2024 */
+@charset "utf-8";
+
+p {
+  color: grey;
+}
+
+#featured-song {
+  border: 2px solid goldenrod;
+  padding: 5%;
+  background-color: lightblue;
+}
+
+#featured-song > h2 {
+  font-size: 120%;
+  color: teal;
+  padding: 10%;
+}
+
+#featured-song p {
+  padding: 2rem;
+}
+
+#des-1 {
+  font-family: "Courier New", Courier, monospace;
+  /* this did not change anything because the internal style takes precedence */
+  font-style: italic;
+  color: rgb(139, 74, 0);
+  /* this changed colour of this p tag, even though i established a colour above because it is more specific. */
+}
+
+li {
+  color: darkslategray;
+}
+
+#featured-song > a {
+  color: white;
+  background-color: darkblue;
+  padding: 2%;
+}
+
+#featured-song > a:hover {
+  color: black;
+  background-color: teal;
+  font-style: italic;
+  padding: 30%;
+  /* lol */
+}

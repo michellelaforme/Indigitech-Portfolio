@@ -1,0 +1,62 @@
+<!-- Michelle La Forme, IFA WD INT. Assignment 1, 5 Nov 2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styling Showdown</title>
+    <!-- link external stylesheet before internal style -->
+
+    <link rel="stylesheet" href="../CSS/styles.css" />
+
+    <!-- internal stylesheet -->
+    <style>
+      body {
+        background-color: lightpink;
+      }
+
+      .second-p {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 42px;
+      }
+    </style>
+
+    <!-- using this type of styling allows you to make changes on this page, but it will not go to other pages. good for simple websites. keeps all the code in one file. -->
+  </head>
+  <body>
+    <!-- inline style -->
+    <h1 style="color: blue; font-size: 36px">Styling Showdown</h1>
+
+    <p style="font-family: sans-serif; font-weight: bold">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+      reprehenderit officiis impedit nobis expedita doloribus facilis quam
+      maiores incidunt. Optio eum inventore vel deserunt quos doloribus nisi eos
+      cumque? Voluptate?
+    </p>
+    <!-- using this type of styling allows you to target just this one, specific element of code vs. the hundreds of others you may have across pages. but it can get confusing if you try to use it for every element... and can also make your code extra cluttered -->
+
+    <p class="second-p">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero similique
+      dolorem, debitis quod quaerat iure consectetur, consequatur eum voluptas
+      rerum distinctio, exercitationem recusandae. Soluta doloremque ducimus
+      voluptatum nulla quas! A.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, ipsa
+      dolores neque earum suscipit veniam ut assumenda asperiores, laboriosam
+      sit repellat voluptatum rerum tempore praesentium deleniti minima numquam
+      molestias? Dignissimos.
+    </p>
+
+    <div class="special-box">
+      <p>
+        "Special box" Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Distinctio officiis totam, suscipit accusantium voluptatem tempore
+        excepturi corrupti, temporibus perferendis consequuntur id cum aliquam
+        enim animi? Earum hic dolore non doloribus.
+      </p>
+    </div>
+  </body>
+</html>
