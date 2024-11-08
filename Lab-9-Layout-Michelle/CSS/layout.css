@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* Michelle La Forme, IFA WD INT. Lab 9, 8 Nov 2024 */
+html {
+  /* background-color: pink; */
+}
+
+body {
+  max-width: 1200px;
+  min-width: 800px;
+  width: 80%;
+  margin: auto;
+  /* background-color: bisque; */
+}
+
+header {
+  /* border: solid 4px red; */
+
+  overflow: auto;
+}
+/* height of header needs some work. will come back to this. */
+
+#logo {
+  /* border: solid 2px orange; */
+  width: 75%;
+  float: left;
+  height: ;
+}
+.vertical {
+  height: 350px;
+}
+
+.vertical ul {
+  /* border: solid 2px purple; */
+  width: 25%;
+  height: 100%;
+  float: left;
+}
+.vertical li {
+  /* border: solid 2px red; */
+  padding: 9% 2.5% 9% 2.5%;
+  height: 12.5%;
+}
+
+.horizontal ul {
+  height: fit-content;
+  clear: left;
+}
+
+.horizontal li {
+  float: left;
+  /* border: solid 2px green; */
+  width: 12.5%;
+  padding: 1%;
+}
+
+main {
+  clear: left;
+}
+main section {
+  /* border: solid 2px blue; */
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
+main section img {
+  max-width: 50%;
+}
+main section p {
+  text-align: left;
+}
+
+div {
+  width: 40%;
+  height: 30rem;
+  margin-bottom: 1%;
+}
+#leftAside {
+  float: left;
+  margin-left: 5%;
+  /* border: solid 2px purple; */
+}
+
+#rightAside {
+  float: right;
+  margin-right: 5%;
+}
+aside {
+  height: 33%;
+  padding: 1%;
+  /* border: solid 2px pink; */
+}
+
+footer {
+  /* background-color: cornflowerblue; */
+  clear: both;
+  text-align: center;
+  padding: 2%;
+}

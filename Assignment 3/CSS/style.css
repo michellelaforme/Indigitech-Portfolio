@@ -1,0 +1,49 @@
+/* <!-- Michelle La Forme, IFA WD INT. Assignment 3, 7 Nov 2024 --> */
+@charset "utf-8";
+
+header {
+  background-color: bisque;
+}
+
+main > img {
+  max-width: 40%;
+}
+
+#specials {
+  border: dotted 4px orange;
+  padding: 2rem;
+  margin: 4%;
+  background-color: bisque;
+  color: orangered;
+}
+
+#specials > h2 {
+  font-size: 4rem;
+  color: orange;
+  text-align: center;
+}
+li {
+  width: 300px;
+}
+article {
+  float: right;
+  border: 2px solid black;
+  padding: 2% 6% 2% 6%;
+  margin-right: 5%;
+}
+
+a {
+  color: white;
+  background-color: orange;
+  border: 1px solid black;
+  padding: 2px;
+  text-decoration: none;
+}
+a:hover {
+  font-style: italic;
+  text-decoration: wavy;
+  background-color: white;
+  color: orangered;
+  padding: 3px;
+  border: 1px solid black;
+}
