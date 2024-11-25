@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  color: #555;
+  background-color: #ccc;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: x-large;
+  color: #2195c6;
+}
+
+#container {
+  /* min-width: 600px;
+  max-width: 1200px; */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 1.6%;
+  /* was 20px */
+}
+
+.product-image {
+  text-align: center;
+  /* width: 100%;
+  height: auto;
+} */
+}
+
+.product {
+  width: 30%;
+  border: 1px dashed grey;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.product img {
+  width: 80%;
+  opacity: 0.5;
+}
+.product img:hover {
+  opacity: 1;
+}
+
+.product .description {
+  text-align: center;
+}
+
+#gridclear {
+  clear: left;
+}
+.description::selection {
+  background-color: yellow;
+  color: green;
+}
+/* adding nav bar */
+.menu {
+  width: 4%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  background-color: rgb(208, 243, 255);
+  visibility: hidden;
+}
+
+nav img {
+  width: 40%;
+}
+.bar:hover nav {
+  visibility: visible;
+}
+/* i tried to do it as .menu:hover but it wouldn't work. but i'd like it to only go when hovering on the image.. */
+
+/* media queries */
+@media (min-width: 1000px) {
+  /* leave it as is */
+}
+
+@media (min-width: 700px) and (max-width: 999px) {
+  .body {
+    background-color: none;
+  }
+  #container {
+    padding: 0.4%;
+  }
+  h1 {
+    text-align: center;
+  }
+  #product-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .product {
+    width: 90%;
+  }
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  /* more styling */
+  .product:nth-of-type(even) {
+    border: 4px solid green;
+  }
+}
+@media (max-width: 700px) {
+  .body {
+    background-color: none;
+  }
+  #container {
+    padding: 0.4%;
+  }
+  h1 {
+    text-align: center;
+  }
+  #product-grid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .product {
+    width: 90%;
+  }
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+  /* more styling */
+  .product:nth-of-type(odd) {
+    border: 4px solid green;
+  }
+}

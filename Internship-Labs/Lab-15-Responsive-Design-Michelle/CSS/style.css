@@ -1,0 +1,167 @@
+/* Michelle La Forme, IFA WD INT. Lab 15, 21 November 2024 */
+
+/* general styles */
+body {
+  background-image: linear-gradient(rgb(152, 214, 152), rgb(50, 121, 50));
+  width: 80%;
+  margin: auto;
+  font-family: fantasy;
+}
+p {
+  color: white;
+  font-size: 1rem;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  padding: 2%;
+}
+main article {
+  padding-bottom: 3%;
+}
+/* header */
+header {
+  background-color: rgb(50, 121, 50);
+}
+.banner {
+  background-color: rgba(255, 255, 255, 0.351);
+  text-align: center;
+  font-size: 2rem;
+  padding: 2%;
+}
+.banner a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+a:hover {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: whitesmoke;
+  padding: 2%;
+}
+header p {
+  font-style: italic;
+  text-align: center;
+  padding: 1%;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+nav li {
+  background-color: whitesmoke;
+  text-align: center;
+  color: rgb(50, 121, 50);
+  padding: 2%;
+}
+nav a {
+  color: rgb(50, 121, 50);
+}
+
+/* directions */
+.directions {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 2%;
+}
+.directions h4 {
+  font-size: 3rem;
+}
+.directions p {
+  color: rgb(50, 121, 50);
+  font-size: 1rem;
+}
+.directions a {
+  color: rgb(152, 214, 152);
+}
+/* footer */
+footer {
+  background-color: rgb(152, 214, 152);
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  padding: 2%;
+  align-items: center;
+}
+
+/* media queries  */
+/* small mobile 480max*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  nav a {
+    font-size: 0.75rem;
+  }
+  .banner {
+    font-size: 1rem;
+  }
+  .directions h4 {
+    font-size: 1rem;
+  }
+  footer {
+    grid-template-columns: auto;
+    gap: 4%;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+/* regular mobile 768max*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  .banner {
+    font-size: 1.5rem;
+  }
+  .directions h4 {
+    font-size: 1.5rem;
+  }
+  footer {
+    grid-template-columns: auto;
+    gap: 4%;
+  }
+  footer p {
+    font-size: 0.75rem;
+  }
+}
+/* tablet/ larger mobile 1024max */
+@media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+  .banner {
+    font-size: 2rem;
+  }
+  .directions h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}

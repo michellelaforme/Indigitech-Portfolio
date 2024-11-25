@@ -1,0 +1,54 @@
+html {
+  max-width: 1600px;
+  min-width: 800px;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-areas:
+    "head head head"
+    "navig navig navig"
+    "intro main side1"
+    "intro main side2"
+    "foot foot foot";
+  gap: 2% 1%;
+  /* padding: 2%; */
+}
+nav {
+  grid-area: navig;
+}
+nav > ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* justify-content: space-between; */
+  column-gap: 1%;
+}
+
+footer {
+  grid-area: foot;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1%;
+}
+
+header {
+  grid-area: head;
+}
+
+#intro {
+  grid-area: intro;
+}
+
+#main {
+  grid-area: main;
+}
+#side1 {
+  grid-area: side1;
+}
+
+#side2 {
+  grid-area: side2;
+}

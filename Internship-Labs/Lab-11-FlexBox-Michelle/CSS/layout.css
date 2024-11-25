@@ -1,0 +1,44 @@
+/* <!-- Michelle La Forme, IFA WD INT. Lab 11, 13 Nov 2024 --> */
+img {
+  max-width: 60%%;
+  margin: 1%;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  padding: 2%;
+}
+
+ul {
+  margin: 3%;
+  padding-bottom: 3%;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  gap: 40px;
+}
+
+.hero img {
+  border: 3px solid black;
+  margin: 2%;
+}
+
+h3 {
+  text-align: center;
+}
+.email {
+  display: flex;
+  justify-content: flex-start;
+}

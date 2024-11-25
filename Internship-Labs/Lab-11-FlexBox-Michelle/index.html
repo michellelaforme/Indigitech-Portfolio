@@ -1,0 +1,214 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 11, 13 Nov 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revel in Retro</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <style>
+      .games-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      #games {
+        background-color: rgba(0, 128, 128, 0.197);
+        color: white;
+      }
+
+      #games article {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        padding: 1%;
+        margin: 1%;
+        border: 2px solid black;
+      }
+
+      .game {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      #featured {
+        background-color: rgba(0, 128, 128, 0.197);
+        display: flex;
+        justify-content: space-around;
+        margin: 2%;
+      }
+
+      #featured article {
+        width: 35%;
+        text-align: center;
+        line-height: 8px;
+      }
+
+      #featured p {
+        color: white;
+        padding: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Revel in Retro</h1>
+      <p>Your go-to place for retro gaming and popular media.</p>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#games">Game Catalog</a></li>
+          <li><a href="./HTML/reviews.html">Reviews</a></li>
+          <li><a href="#featured">Featured</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <img
+          src="./Images/Sega-Mega-Drive-JP-Mk1-Console-Set.jpg"
+          alt="Sega Genesis"
+        />
+        <div>
+          <h2>Sega Genesis: Where it All Began</h2>
+          <p>
+            Rewind time and explore the nostalgia of the
+            <span style="font-style: italic; color: black">Sega Genesis</span>,
+            one of the first video game consoles available commercially.
+          </p>
+        </div>
+      </section>
+
+      <section id="games">
+        <div>
+          <h3>Popular Games</h3>
+          <p>
+            Some of the more popular games for the console, as rated by real
+            users.
+          </p>
+        </div>
+        <div class="games-list">
+          <article class="game">
+            <img src="./Images/sonic.jpg" alt="Sonic the Hedgehog game" />
+            <h4>Sonic the Hedgehog</h4>
+            <p>
+              Players control Sonic the Hedgehog, who can run at near supersonic
+              speeds; Sonic sets out on a quest to defeat Dr. Robotnik, a
+              scientist who has imprisoned animals in robots and seeks the
+              powerful Chaos Emeralds.
+            </p>
+            <a href="./HTML/reviews.html">Read more</a>
+          </article>
+
+          <article class="game">
+            <img src="./Images/castle.jpg" alt="Castlevania: Bloodlines game" />
+            <h4>Castlevania: Bloodlines</h4>
+            <p>
+              A vampire named Elizabeth Bartley is orchestrating the beginning
+              of World War I as a sacrificial war to bring her uncle, Dracula,
+              back to life.
+            </p>
+          </article>
+
+          <article class="game">
+            <img
+              src="./Images/cadillac.jpg"
+              alt="Cadillac and Dinosaurs game"
+            />
+            <h4>Cadillac and Dinosaurs</h4>
+            <p>
+              A vampire named Elizabeth Bartley is orchestrating the beginning
+              of World War I as a sacrificial war to bring her uncle, Dracula,
+              back to life.
+            </p>
+            <a href="./HTML/reviews.html">Read more</a>
+          </article>
+
+          <article class="game">
+            <img
+              src="./Images/Mortal_Kombat_II_boxart.png"
+              alt="Mortal Kombat II game"
+            />
+            <h4>Mortal Kombat II</h4>
+            <p>
+              The game's plot continues from the first game, featuring the next
+              Mortal Kombat tournament set in the otherdimensional realm of
+              Outworld, with the Outworld and Earthrealm representatives
+              fighting each other on their way to challenge the evil emperor
+              Shao Kahn.
+            </p>
+          </article>
+
+          <article class="game">
+            <img src="./Images/aladdin.png" alt="Aladdin game" />
+            <h4>Disney's Aladdin</h4>
+            <p>
+              Disney's Aladdin is a side-scrolling platform game in which the
+              player controls Aladdin throughout settings and a storyline based
+              on the namesake film.
+            </p>
+            <a href="./HTML/reviews.html">Read more</a>
+          </article>
+        </div>
+      </section>
+      <aside>
+        <h3>Reviews</h3>
+        <p
+          style="max-width: 80%; margin: auto; color: white; padding-bottom: 2%"
+        >
+          Revel in Retro interviews real-life users to find out what their
+          favourite games are and what they like about them. To read more
+          in-depth reviews, visit our <a href="">reviews page</a>
+        </p>
+      </aside>
+
+      <section id="featured">
+        <article>
+          <h3>Game of the month</h3>
+          <img src="./Images/cadillac.jpg" alt="Cadillac and Dinosaurs game" />
+          <h4>Cadillac and Dinosaurs</h4>
+          <p>
+            For the second month in a row, this game was voted the top choice by
+            Sega Genesis users.
+          </p>
+        </article>
+        <article>
+          <h3>Gamer of the month</h3>
+          <img src="./Images/pnk.jpg" alt="Gamer girl drawing" />
+          <h4>PnkPrncess22</h4>
+          <p>
+            Announced as this month's gamer of the month, PnkPrncess22 is known
+            for her streaming on Twitch and pink hair.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h5>Contact:</h5>
+        <p>
+          Email:<a href="mailto:msmlaforme@hotmail.com"
+            >admin@RevelinRetro.com</a
+          >
+        </p>
+        <address>22 Categor Lane, Los Angeles, California, 90210</address>
+      </div>
+
+      <div>
+        <h5>Sign up for email updates:</h5>
+        <div class="email">
+          <p class="input">Email input</p>
+          <p class="submit">Submit</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

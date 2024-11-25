@@ -1,0 +1,149 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 15, 21 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tune In Music Festival</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <style>
+      .wrapper article {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-template-areas:
+          "head head head head head head"
+          "feat feat feat feat feat feat"
+          "sec sec sec sec2 sec2 sec2"
+          "art art art2 art2 art3 art3";
+      }
+      .wrapper h2 {
+        grid-area: head;
+        color: black;
+      }
+      .wrapper p {
+        border: 2px solid white;
+        padding: 4%;
+        text-align: center;
+        font-family: cursive;
+      }
+      .featured {
+        font-size: 4rem;
+        grid-area: feat;
+      }
+      .sec {
+        font-size: 3rem;
+        grid-area: sec;
+      }
+      .sec2 {
+        font-size: 3rem;
+        grid-area: sec2;
+      }
+      .art {
+        font-size: 2rem;
+        grid-area: art;
+      }
+      .art2 {
+        font-size: 2rem;
+        grid-area: art2;
+      }
+      .art3 {
+        font-size: 2rem;
+        grid-area: art3;
+      }
+
+      @media (max-width: 480px) {
+        .wrapper h2 {
+          font-size: 1.5rem;
+        }
+        .wrapper p {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        .wrapper h2 {
+          font-size: 1.5rem;
+        }
+        .wrapper p {
+          font-size: 2rem;
+        }
+      }
+
+      @media (min-width: 769) and (max-width: 1024px) {
+        .wrapper h2 {
+          font-size: 2rem;
+        }
+        .wrapper p {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <a href="https://www.paypal.me/sparklymich/"> Get your tickets now! </a>
+      </div>
+      <h1>Tune In Music Festival: Christmas Edition</h1>
+      <p>Your favourite music festival, decking the holiday halls.</p>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./lineup.html">2024 Lineup</a></li>
+          <li><a href="./info.html">More Info</a></li>
+          <li><a href="https://www.paypal.me/sparklymich/">Buy Tickets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <article>
+          <h2>Day 1: Friday December 6</h2>
+          <p class="featured">Justin Bieber</p>
+          <p class="sec">Frank Ocean</p>
+          <p class="sec2">Childish Gambino</p>
+          <p class="art">Tyler The Creator</p>
+          <p class="art2">Chance the Rapper</p>
+          <p class="art3">Omar Appolo</p>
+        </article>
+
+        <article>
+          <h2>Day 2: Saturday December 7</h2>
+          <p class="featured">Jonas Brothers</p>
+          <p class="sec">Joe Jonas</p>
+          <p class="sec2">Shawn Mendes</p>
+          <p class="art">Niall Horan</p>
+          <p class="art2">Wiz Khalifa</p>
+          <p class="art3">Jaden</p>
+        </article>
+
+        <article>
+          <h2>Day 3: Sunday December 8</h2>
+          <p class="featured">Ariana Grande</p>
+          <p class="sec">Sabrina Carpenter</p>
+          <p class="sec2">Chappel Roan</p>
+          <p class="art">Dua Lipa</p>
+          <p class="art2">Miley Cyrus</p>
+          <p class="art3">Halsey</p>
+        </article>
+      </div>
+      <article class="directions">
+        <h4>Need directions?</h4>
+        <p>
+          Check out the <a href="./HTML/info.html">More info</a> page for map
+          and detailed instructions.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2024, Tune In.</p>
+      <address>
+        Ihtoli-maqahamok – The Gathering Space <br />King and Water Streets
+        <br />Saint John, New Brunswick
+      </address>
+    </footer>
+  </body>
+</html>

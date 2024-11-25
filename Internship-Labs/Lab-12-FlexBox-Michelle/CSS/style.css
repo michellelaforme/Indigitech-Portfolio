@@ -1,0 +1,53 @@
+/* Michelle La Forme, IFA WD INT. Lab 12, 14 Nov 2024 */
+body {
+  background-color: pink;
+}
+
+header div {
+  background-color: palevioletred;
+}
+
+li {
+}
+
+a {
+  background-color: white;
+  border: 2px solid black;
+  color: palevioletred;
+}
+
+a:hover {
+  background-color: palevioletred;
+  color: white;
+}
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 1%;
+}
+h3 {
+  font-size: 22px;
+  text-align: center;
+}
+
+aside {
+  background-color: rgba(216, 112, 147, 0.627);
+  text-align: center;
+  padding: 4%;
+}
+
+footer {
+  background-color: palevioletred;
+  text-align: center;
+}
+footer div {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}

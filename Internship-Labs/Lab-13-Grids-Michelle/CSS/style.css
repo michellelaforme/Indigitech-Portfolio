@@ -1,0 +1,78 @@
+/* Michelle La Forme, IFA WD INT. Lab 13, 15 Nov 2024 */
+/* styles that are consistent across multiple pages */
+/* general */
+html {
+  background-color: tan;
+}
+
+body {
+  background-color: brown;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: square;
+  margin: 3%;
+}
+ol {
+  list-style-position: inside;
+  list-style-type: lower-roman;
+}
+
+/* header  */
+
+header {
+  background-color: antiquewhite;
+  width: 80%;
+  color: brown;
+  margin: auto;
+}
+header img {
+  margin: 20px;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  margin: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+header p {
+  font-style: italic;
+}
+nav li {
+  text-align: center;
+}
+
+a {
+  color: brown;
+}
+
+.cookbook {
+  background-color: antiquewhite;
+  border: 4px double brown;
+  text-align: center;
+}
+p {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.button {
+  background-color: antiquewhite;
+  padding: 5px 20px 5px 20px;
+  border: 2px double brown;
+}
+
+/* footer */
+footer {
+  background-color: antiquewhite;
+  width: 80%;
+  color: brown;
+  margin: auto;
+  text-align: center;
+  padding: 5%;
+}

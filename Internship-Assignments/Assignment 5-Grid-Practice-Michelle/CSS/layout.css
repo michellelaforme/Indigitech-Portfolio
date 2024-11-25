@@ -1,0 +1,164 @@
+/* Michelle La Forme, IFA WD INT. Assignment 5, 20 November 2024  */
+body {
+  max-width: 2000px;
+  min-width: 200px;
+}
+/* layout 1 */
+
+.container1 {
+  display: grid;
+  grid-template-columns: "1fr 2fr";
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas:
+    "b a a"
+    "b c d"
+    "b e f";
+  max-width: 2000px;
+  min-width: 200px;
+  width: 40%;
+  gap: 1%;
+  margin: 1% 1% 6% 1%;
+}
+
+.itemA {
+  grid-area: a;
+}
+.itemB {
+  grid-area: b;
+}
+.itemC {
+  grid-area: c;
+}
+.itemD {
+  grid-area: d;
+}
+.itemE {
+  grid-area: e;
+}
+.itemF {
+  grid-area: f;
+}
+/* originally i had the class names as 1itemA etc but you can't start with numericals. */
+
+/* layout 2 */
+.container2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-areas:
+    "head head head head"
+    "main main none sidebar"
+    "foot foot foot foot";
+  width: 50%;
+  gap: 1%;
+  margin: 1% 1% 6% 1%;
+}
+
+.header2 {
+  grid-area: head;
+}
+.main2 {
+  grid-area: main;
+}
+.sidebar2 {
+  grid-area: sidebar;
+}
+.footer2 {
+  grid-area: foot;
+}
+
+/* layout 3 */
+.container3 {
+  width: 40%;
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 60px 240px 120px 150px 120px 60px;
+  grid-template-areas:
+    "head3 head3 head3"
+    "hero3 main3 main3"
+    "side3 main3 main3"
+    "side3 extra3 extra3"
+    "img3 img3 post3"
+    "foot3 foot3 foot3";
+  column-gap: 1%;
+  row-gap: 1.5%;
+}
+
+.header3 {
+  grid-area: head3;
+}
+.hero3 {
+  grid-area: hero3;
+}
+.main3 {
+  grid-area: main3;
+}
+.side3 {
+  grid-area: side3;
+}
+.extra3 {
+  grid-area: extra3;
+}
+.images3 {
+  grid-area: img3;
+}
+.posts3 {
+  grid-area: post3;
+}
+.foot3 {
+  grid-area: foot3;
+}
+
+/* layout 4 */
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+/* navigation bar */
+.nav4 ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 3%;
+  /* you want one column per li so they all stay within the line */
+}
+/* divs in the main content */
+.container4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 100px 200px 100px 200px;
+  grid-template-areas:
+    "one two"
+    "three three"
+    "four five"
+    "six six";
+  gap: 3%;
+  margin: 1% 0 7% 0;
+}
+
+.div1 {
+  grid-area: one;
+}
+.div2 {
+  grid-area: two;
+}
+.div3 {
+  grid-area: three;
+}
+.div4 {
+  grid-area: four;
+}
+.div5 {
+  grid-area: five;
+}
+.div6 {
+  grid-area: six;
+}
+
+/* footer */
+.footer4 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 3%;
+  margin-bottom: 6%;
+}

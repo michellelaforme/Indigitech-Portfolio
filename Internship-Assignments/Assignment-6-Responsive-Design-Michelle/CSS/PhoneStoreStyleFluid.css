@@ -1,0 +1,47 @@
+body {
+  font-family: sans-serif;
+  color: #555;
+  background-color: #ccc;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: x-large;
+  color: #2195c6;
+}
+
+#container {
+  min-width: 600px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 1.6%;
+  /* was 20px */
+}
+
+.product-image {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.product {
+  width: 30%;
+  border: 1px dashed grey;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.product img {
+  width: 80%;
+}
+
+.product .description {
+  text-align: center;
+}
+
+#gridclear {
+  clear: left;
+}

@@ -1,0 +1,126 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 13, 15 Nov 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookbook</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <style>
+      .community ul {
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        margin: auto;
+      }
+      .community li {
+        list-style-type: none;
+        border: 2px solid antiquewhite;
+        padding: 1%;
+        color: antiquewhite;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+
+      .dishes {
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+      }
+
+      .dishes article {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./Images/multicultural-concept-illustration_114360-27794.avif"
+        alt=""
+      />
+      <h1>The Diversity Table</h1>
+      <p style="text-align: start">Where there's a seat for everyone</p>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./HTML/recipes.html">Recipes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="community">
+        <h2>Our Community</h2>
+        <p>
+          We're so lucky that our community has members from all different
+          cultural backgrounds, and that they're willing to share them with us!
+        </p>
+        <ul>
+          <li>Bangladeshi</li>
+          <li>Indian</li>
+          <li>Filipino</li>
+          <li>Nigerian</li>
+          <li>Syrian</li>
+          <li>Tamil</li>
+        </ul>
+        <p>... and more!</p>
+      </section>
+
+      <section>
+        <h2>Featured Dishes</h2>
+        <div class="dishes">
+          <article>
+            <img src="./Images/shawarma.jpg" alt="" />
+            <h3>Shawarma</h3>
+            <p>
+              With perfectly spiced and slow cooked meat, these wraps are a
+              delicious way to enjoy your favourite meat.
+            </p>
+            <p><a href="" class="button">Recipe</a></p>
+          </article>
+          <article>
+            <img src="./Images/butter.jpg" alt="" />
+            <h3>Butter Chicken</h3>
+            <p>
+              A classic and loved by all, this dish pairs chicken with tomato
+              and spices.
+            </p>
+            <p><a href="" class="button">Recipe</a></p>
+          </article>
+          <article>
+            <img src="./Images/plantains.jpg" alt="" />
+            <h3>Fried plantains</h3>
+            <p>
+              Not only easy to make, but this dish is healthy and it tastes
+              delicious!
+            </p>
+            <p><a href="" class="button">Recipe</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="cookbook">
+        <h2>Order our cookbook!</h2>
+        <p>
+          Available now for preorder, the cookbook will feature recipes from 42
+          different members of our community, all either created by them or
+          passed down from past generations.
+        </p>
+        <p>
+          <a href="mailto:msmlaforme@hotmail.com" class="button"
+            >Request yours now!</a
+          >
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2024 - The Diversity Table</p>
+    </footer>
+  </body>
+</html>

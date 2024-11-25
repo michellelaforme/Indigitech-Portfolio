@@ -1,0 +1,38 @@
+/* Michelle La Forme, IFA WD INT. Lab 12, 14 Nov 2024 */
+
+body {
+  min-width: 800px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  /* max-width: 30%; */
+  width: 200px;
+}
+
+header div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+header img {
+  width: 10%;
+}
+
+header p {
+  width: 20%;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px 0 20px 0;
+}
+
+a {
+  padding: 4px 20px 4px 20px;
+}

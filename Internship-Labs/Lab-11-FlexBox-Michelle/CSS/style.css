@@ -1,0 +1,77 @@
+/* <!-- Michelle La Forme, IFA WD INT. Lab 11, 13 Nov 2024 --> */
+body {
+  background-color: lightblue;
+  font-family: cursive;
+  color: blue;
+}
+
+header,
+footer {
+  background-color: teal;
+  color: white;
+}
+a {
+  color: palevioletred;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+}
+
+header p {
+  text-align: center;
+}
+
+nav li {
+  background-color: lightblue;
+  padding: 2%;
+  border: 2px solid black;
+}
+li:hover {
+  transform: scale(1.2);
+  background-color: rgb(139, 196, 214);
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 2%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer address {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer > div {
+  width: 40%;
+  padding: 2%;
+}
+
+h5 {
+  margin-bottom: 10px;
+  font-size: 120%;
+}
+
+.input {
+  background-color: white;
+  color: grey;
+  padding: 5px 160px 5px 5px;
+}
+
+.submit {
+  background-color: grey;
+  color: palevioletred;
+  padding: 2%;
+}

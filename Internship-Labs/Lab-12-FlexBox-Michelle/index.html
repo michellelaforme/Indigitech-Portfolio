@@ -1,0 +1,125 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 12, 14 Nov 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indigenous Artists in Canada</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/layout.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <style>
+      .artists {
+        display: flex;
+        justify-content: space-around;
+        margin: 40px;
+      }
+
+      .artists article {
+        border: 2px solid black;
+        padding: 2%;
+        text-align: center;
+      }
+
+      .focus {
+        display: flex;
+        justify-content: space-around;
+        margin: 2%;
+      }
+      .focus article {
+        border: 2px solid black;
+        padding: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navigation is the same across all pages, as well as footer and general styles - use external style sheet  -->
+
+    <header id="top">
+      <div>
+        <img src="./Images/logo.avif" alt="Logo" />
+        <h1>Indigenous Artists in Canada</h1>
+        <p>
+          A place to view, appreciate, and purchase art made by true Indigenous
+          artists within so-called Canada.
+        </p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="./HTML/artists.html">Artists</a></li>
+          <li><a href="./HTML/gallery.html">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <body>
+      <h2>Featured artists</h2>
+      <section class="artists">
+        <article>
+          <h3>Natasha Holloran</h3>
+          <img src="./Images/tasha.jpg" alt="Natasha Holloran photo" />
+          <p>Carrier nation artist from Ontario</p>
+        </article>
+
+        <article>
+          <h3>Tammy Rivers</h3>
+          <img src="./Images/tammy.jpg" alt="Tammy Rivers photo" />
+          <p>Metis artist from Ontario</p>
+        </article>
+
+        <article>
+          <h3>Michelle La Forme</h3>
+          <img src="./Images/michelle.jpg" alt="Michelle La Forme photo" />
+          <p>Ojibwe artist from New Brunswick</p>
+        </article>
+
+        <article>
+          <h3>Tsista Kennedy</h3>
+          <img src="./Images/tsista.webp" alt="Tsista Kennedy" />
+          <p>Onyota’a:ka artist from Ontario</p>
+        </article>
+      </section>
+      <aside>
+        <p>
+          To learn more about these artists, and view the rest of our catalog,
+          visit the <a href="./HTML/artists.html">Artists</a> page
+        </p>
+      </aside>
+
+      <h2>November's Medium Focus</h2>
+      <p>
+        Beadwork is a practice that is common amongst many Indigenous groups,
+        but they all approach it differently. Each group comes equipped with
+        their own styles and techniques.
+      </p>
+      <section class="focus">
+        <article>
+          <h3>Metis</h3>
+          <img src="./Images/metis.jpg" alt="Metis sash beadwork" />
+        </article>
+        <article>
+          <h3>Ojibwe</h3>
+          <img src="./Images/ojibwe.jpg" alt="Dreamcatcher" />
+        </article>
+      </section>
+      <aside>
+        <p>
+          To view more examples of beadwork, and other mediums that we feature
+          in our site, visit the <a href="./HTML/gallery.html">Gallery</a> page
+        </p>
+      </aside>
+    </body>
+
+    <footer id="contact">
+      <p>&copy; Copyright 2024</p>
+      <div>
+        <h5>Contact:</h5>
+        <p>Email: <a href="mailto:msmlaforme@hotmail.com">Site admin</a></p>
+        <address>22 Corgi Lane, Quispamsis, New Brunswick, Canada</address>
+      </div>
+    </footer>
+  </body>
+</html>

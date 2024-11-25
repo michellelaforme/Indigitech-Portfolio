@@ -1,0 +1,66 @@
+/* Michelle La Forme, IFA WD INT. assignment 4, 18 nov 2024 */
+
+body {
+  background-color: grey;
+}
+.city-grid {
+  max-width: 1200px;
+  min-width: 800px;
+  width: 80%;
+  height: 2500px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 12% auto;
+  grid-template-rows: repeat(6, 300px);
+  grid-template-areas:
+    "park park park"
+    "restaurant restaurant cityhall"
+    "pool pool cityhall"
+    "statue hospital hospital"
+    "vet hospital hospital"
+    "vet park2 park2";
+  gap: 4%;
+  background-color: darkgray;
+  padding: 2%;
+}
+/* so i set a background colour to this and i couldn't figure out why the content wouldn't fit inside of it */
+img {
+  width: 200px;
+  height: 200px;
+}
+.city-grid div {
+  padding: 4%;
+}
+
+.park1 {
+  grid-area: park;
+  background-color: rgb(79, 148, 79);
+}
+.park2 {
+  grid-area: park2;
+  background-color: rgb(107, 173, 107);
+}
+.pool {
+  grid-area: pool;
+  background-color: rgb(92, 205, 205);
+}
+.city-hall {
+  grid-area: cityhall;
+  background-color: gray;
+}
+.statue {
+  grid-area: statue;
+  background-color: rgb(202, 141, 202);
+}
+.hospital {
+  grid-area: hospital;
+  background-color: rgb(144, 93, 93);
+}
+.vet {
+  grid-area: vet;
+  background-color: rgb(4, 4, 22);
+}
+.restaurant {
+  grid-area: restaurant;
+  background-color: rgb(198, 198, 124);
+}

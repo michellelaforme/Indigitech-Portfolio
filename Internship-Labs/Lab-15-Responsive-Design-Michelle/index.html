@@ -1,0 +1,166 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 15, 21 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tune In Music Festival</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <style>
+      .icons {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 4rem;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .icons h2 {
+        font-size: 6rem;
+      }
+      .icons p {
+        font-size: 4rem;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .artists {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-areas:
+          "head head head"
+          "art1 art2 art3"
+          "ban ban ban";
+        justify-content: space-evenly;
+        text-align: center;
+      }
+      .artists a {
+        background-color: whitesmoke;
+        grid-area: ban;
+        padding: 2%;
+        color: rgb(50, 121, 50);
+        text-align: center;
+        margin: auto;
+      }
+      .artists h2 {
+        grid-area: head;
+      }
+      .art1 {
+        grid-area: art1;
+      }
+      .art2 {
+        grid-area: art2;
+      }
+      .art3 {
+        grid-area: art3;
+      }
+      @media (max-width: 480px) {
+        .icons p,
+        .icons h2 {
+          font-size: 2rem;
+        }
+        .artists {
+          grid-template-columns: auto;
+          grid-template-areas:
+            "head"
+            "art1"
+            "art2"
+            "art3"
+            "ban";
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        .icons p,
+        .icons h2 {
+          font-size: 2rem;
+        }
+        .artists {
+          grid-template-columns: auto;
+          grid-template-areas:
+            "head"
+            "art1"
+            "art2"
+            "art3"
+            "ban";
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1024px) {
+        .icons p,
+        .icons h2 {
+          font-size: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <a href="https://www.paypal.me/sparklymich/"> Get your tickets now! </a>
+      </div>
+      <h1>Tune In Music Festival: Christmas Edition</h1>
+      <p>Your favourite music festival, decking the holiday halls.</p>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./HTML/about.html">About Us</a></li>
+          <li><a href="./HTML/lineup.html">2024 Lineup</a></li>
+          <li><a href="./HTML/info.html">More Info</a></li>
+          <li><a href="https://www.paypal.me/sparklymich/">Buy Tickets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article class="icons">
+        <div>
+          <h2>&#127789;</h2>
+          <p>Food</p>
+        </div>
+        <div>
+          <h2>&#127926;</h2>
+          <p>Music</p>
+        </div>
+        <div>
+          <h2>&#127876;</h2>
+          <p>Spirit</p>
+        </div>
+      </article>
+
+      <article class="artists">
+        <h2>Featured artists</h2>
+        <div class="art1">
+          <img src="./Images/justin.jpg" alt="justin bieber christmas photo" />
+          <p>Justin Bieber</p>
+        </div>
+        <div class="art2">
+          <img src="./Images/jobros.jpg" alt="jonas brothers christmas photo" />
+          <p>Jonas Brothers</p>
+        </div>
+        <div class="art3">
+          <img src="./Images/ariana.jpg" alt="ariana grande christmas photo" />
+          <p>Ariana Grande</p>
+        </div>
+        <a href="./HTML/lineup.html">See the entire lineup</a>
+      </article>
+
+      <article class="directions">
+        <h4>Need directions?</h4>
+        <p>
+          Check out the <a href="./HTML/info.html">More info</a> page for map
+          and detailed instructions.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2024, Tune In.</p>
+      <address>
+        Ihtoli-maqahamok – The Gathering Space <br />King and Water Streets
+        <br />Saint John, New Brunswick
+      </address>
+    </footer>
+  </body>
+</html>
