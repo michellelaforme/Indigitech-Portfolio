@@ -1,0 +1,39 @@
+@charset "utf-8";
+body {
+  width: 80%;
+  margin: auto;
+  background-color: black;
+  color: white;
+  font-family: fantasy;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  padding: 5%;
+}
+h2 {
+  font-size: 2rem;
+  color: maroon;
+  padding: 3%;
+}
+ol {
+  border: 3px dashed maroon;
+  border-radius: 20px;
+  list-style-type: lower-roman;
+  list-style-position: inside;
+}
+li {
+  padding: 2%;
+}
+p {
+  line-height: 20px;
+  padding: 4%;
+}
+header,
+footer {
+  background-color: maroon;
+  margin: 2%;
+  padding: 1%;
+}

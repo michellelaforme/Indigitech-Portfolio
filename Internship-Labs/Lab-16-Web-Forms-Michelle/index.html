@@ -1,0 +1,166 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 16, 25 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach Clean Up Initiative</title>
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/responsive.css" />
+    <style>
+      html {
+        background-color: peachpuff;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      body {
+        width: 90%;
+        margin: auto;
+        background-color: bisque;
+        color: orangered;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+      }
+      nav ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 2%;
+        text-align: center;
+      }
+      nav li {
+        background-color: orangered;
+      }
+      nav a {
+        color: white;
+      }
+      a:hover {
+        font-style: italic;
+      }
+      footer {
+        background-color: orangered;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        margin: 4%;
+      }
+      /* page specific styles */
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+        color: orange;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      article {
+        width: 80%;
+        margin: auto;
+      }
+
+      article p {
+        font-size: 1.5rem;
+        padding: 4%;
+        font-style: italic;
+      }
+      aside h2 {
+        font-size: 2.5rem;
+        font-style: oblique;
+      }
+      aside {
+        background-color: rgba(255, 166, 0, 0.377);
+        color: white;
+      }
+      aside a {
+        color: white;
+        text-decoration: none;
+      }
+      aside p {
+        font-size: 1rem;
+        padding: 4%;
+        text-align: center;
+      }
+
+      /* responsive design */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        body {
+          width: 100%;
+        }
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        footer {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        body {
+          width: 100%;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        footer {
+          font-size: 1rem;
+        }
+        nav ul {
+          grid-template-columns: auto;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          width: 100%;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        footer {
+          font-size: 1rem;
+        }
+        nav ul {
+          grid-template-columns: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Quispamsis Beach Clean Up Initiative</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">More Information</a></li>
+          <li><a href="./HTML/signup.html">Volunteer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>Welcome to the Town of Quispamsis' Beach Clean Up Initiative.</h2>
+        <p>
+          We are a group of caring citizens of Quispamsis who want to work
+          together to keep our beaches clean and beautiful.
+        </p>
+      </article>
+      <aside>
+        <h2>Want to volunteer?</h2>
+        <p>
+          To sign up to volunteer for the initiative, visit our
+          <a href="./HTML/signup.html">Volunteer Sign-Up page</a>
+        </p>
+      </aside>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2024 <br />Quispamsis Beach Clean Up Initiative</p>
+    </footer>
+  </body>
+</html>

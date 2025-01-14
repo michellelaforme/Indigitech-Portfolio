@@ -1,0 +1,126 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 22, 9 December 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape the Haunted Mansion</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Escape the Haunted Mansion</h1>
+    </header>
+    <main>
+      <h2>Instructions:</h2>
+      <p>
+        In order to escape the haunted mansion, you need to follow the
+        instructions carefully that are laid out in the prompts. Answers are
+        case sensitive and must be spelled correctly to be accepted by the
+        program.
+      </p>
+      <ol>
+        <li>Enter your name and answer the questions as asked</li>
+        <li>Make decisions based on the prompts</li>
+        <li>
+          Collect the riddle answers and keys to navigate your way through the
+          haunted mansion
+        </li>
+      </ol>
+      <p>Questions?</p>
+      <p>
+        Too bad, you're on your own. If you don't make it, you're welcome to
+        start over.
+      </p>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2024, Mich's Haunted Mansion</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  alert(
+    "Welcome to the haunted mansion! You will be prompted with different decisions to make, riddles and tasks. Answer to the best of your abilities, and navigate your way through the mansion."
+  );
+  let name = prompt("What is your name?");
+  // first decision
+  let direction1 = prompt(
+    name +
+      ", you enter the house and are presented with two doors. Which would you like to open? (left/right)"
+  );
+
+  if (direction1 == "left") {
+    alert(
+      "You chose the left door. In the room, there is a brown cedar chest, but it's locked. To open, you will need the key and a code."
+    );
+  } else {
+    alert(
+      "You chose the right door. In the room, there is a brown cedar chest, but it's locked. To open, you will need the key and a code."
+    );
+  }
+
+  let key = prompt(name + ", do you have a key? (yes/no)");
+  let code = Number(
+    prompt("Do you know the code? (Hint: what is 40 times 4?)")
+  );
+
+  if (key == "yes" && code == 160) {
+    alert(
+      "Congratulations! You are able to open the cedar chest. The top is a bit heavy, but you've got it."
+    );
+    alert(
+      "You open the chest to reveal: A million dollars! It's yours to keep!"
+    );
+  } else if (key != "yes" || code != 160) {
+    alert(
+      "Close! You only have one of the requirements to open the chest. But you're welcome to continue through the house."
+    );
+  }
+
+  alert(
+    name +
+      ", you are presented again with a door, but it is locked. In order to make it through the house, you will have to enter through this door."
+  );
+  alert(
+    "Answer a riddle to open the door. If the answer is correct, the door will open. If the answer is incorrect, you will be presented with another, more difficult riddle. Fail both, and your journey ends here."
+  );
+
+  let riddle1 = prompt(
+    "What has many keys but cannot open a door? (Hint: one word, five letters)"
+  );
+
+  if (riddle1 == "piano") {
+    alert(
+      "Congratulations " +
+        name +
+        "! You made it through the door. You're almost at the exit!"
+    );
+  } else {
+    alert(
+      "Sorry, that's incorrect. You must answer the next riddle correctly to make it through."
+    );
+    let riddle2 = prompt(
+      "What goes up and down but doesn't move? (Hint: one word, 9 letters)"
+    );
+    if (riddle2 == "staircase") {
+      alert("That was close, but you got it!");
+    }
+  }
+
+  let exitDoor = prompt(
+    "In order to escape the haunted mansion, you must have answered the last riddle correctly, and have an exit key. Do you have the exit key? (yes/no)"
+  );
+  if (exitDoor == "yes" && (riddle1 == "piano" || riddle2 == "staircase")) {
+    alert(
+      "Congratulations, " +
+        name +
+        ", you made it to the end of the mansion! You can finally see the sunlight and grass. Thanks for playing!"
+    );
+  } else {
+    alert(
+      "Unfortunately, you did not make it out of the haunted mansion. You will have to stay here for all of eternity. Enjoy!"
+    );
+  }
+</script>

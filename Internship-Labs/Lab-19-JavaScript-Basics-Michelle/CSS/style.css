@@ -1,0 +1,32 @@
+body {
+  background-color: lightblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+footer,
+header {
+  background-color: teal;
+  color: whitesmoke;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 2%;
+}
+h2 {
+  font-size: 3rem;
+  margin: 2%;
+}
+p {
+  margin: 2%;
+  line-height: 20px;
+}
+ol {
+  background-color: beige;
+  border: 2px solid blue;
+  list-style-type: square;
+  list-style-position: inside;
+  padding: 3%;
+  margin: auto;
+}

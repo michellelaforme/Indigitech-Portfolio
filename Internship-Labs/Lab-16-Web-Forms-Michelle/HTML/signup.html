@@ -1,0 +1,163 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 16, 25 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beach Clean Up Initiative</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/responsive.css" />
+    <style>
+      html {
+        background-color: peachpuff;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      body {
+        width: 90%;
+        margin: auto;
+        background-color: bisque;
+        color: orangered;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+      }
+      nav ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 2%;
+        text-align: center;
+      }
+      nav li {
+        background-color: orangered;
+      }
+      nav a {
+        color: white;
+      }
+      nav a:hover {
+        font-style: italic;
+      }
+      footer {
+        background-color: orangered;
+        color: white;
+        text-align: center;
+        font-size: 2rem;
+        margin: 4%;
+      }
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        padding: 2%;
+      }
+      fieldset {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 50%;
+        margin: auto;
+        justify-content: space-evenly;
+        row-gap: 3%;
+        padding: 4%;
+      }
+      label {
+        font-size: 1.25rem;
+      }
+      /* responsive design */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        body {
+          width: 100%;
+        }
+        h1 {
+          font-size: 2.5rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        footer {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        body {
+          width: 100%;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        footer {
+          font-size: 1rem;
+        }
+        nav ul {
+          grid-template-columns: auto;
+        }
+        fieldset {
+          grid-template-columns: auto;
+          width: 70%;
+          justify-content: center;
+          padding-bottom: 15%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        body {
+          width: 100%;
+        }
+        h1 {
+          font-size: 1.5rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        footer {
+          font-size: 1rem;
+        }
+        nav ul {
+          grid-template-columns: auto;
+        }
+        fieldset {
+          grid-template-columns: auto;
+          width: 70%;
+          justify-content: center;
+          padding-bottom: 20%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Quispamsis Beach Clean Up Initiative</h1>
+      <nav>
+        <ul>
+          <li><a href="../index.html">More Information</a></li>
+          <li><a href="../HTML/signup.html">Volunteer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Volunteer Sign-Up</h2>
+      <form action="" method="GET">
+        <fieldset>
+          <legend>Volunteer Information</legend>
+          <label for="firstName">First name:</label>
+          <input type="text" name="Name1" id="firstName" />
+          <label for="lastName">Last name:</label>
+          <input type="text" name="Name2" id="lastName" />
+          <label for="email">Email address:</label>
+          <input type="email" name="email" id="email" />
+          <label for="interests">Interests</label>
+          <input type="text" name="interests" id="interests" />
+          <label for="avail">Availability</label>
+          <input type="date" name="availability" id="avail" />
+          <input type="submit" value="Sign Up" />
+          <input type="reset" value="I don't care about the beaches" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; Copyright 2024 <br />Quispamsis Beach Clean Up Initiative</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 24, 13 December 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Iteration</title>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim fugiat
+      aperiam quo, distinctio eaque provident eligendi animi tenetur ullam, quam
+      veniam! Nam officia sapiente iusto fugit provident officiis tempora rem
+      odio quam deleniti veritatis corrupti repellendus at error velit impedit
+      harum minus amet necessitatibus vero, nesciunt dolorum obcaecati
+      voluptate! Temporibus reiciendis consequatur adipisci, obcaecati facere
+      assumenda soluta ea sint quos quis, libero eveniet incidunt. Quaerat
+      consequatur quo quidem commodi quis nam assumenda culpa, blanditiis minima
+      officiis corporis expedita itaque, neque mollitia eaque similique,
+      molestias possimus delectus saepe! Itaque hic perferendis, aliquid
+      assumenda dolorum consectetur dolores sequi quaerat. Labore architecto
+      voluptas, voluptate aliquid iure quisquam eos non quod id molestiae
+      aperiam assumenda sunt quia dolorum hic. Nihil corporis obcaecati nam,
+      pariatur voluptatem mollitia quae cum quo tenetur eaque deserunt
+      repellendus aliquam consequatur aperiam iure modi illo itaque quaerat
+      repudiandae in. Asperiores tenetur repellendus sed distinctio mollitia
+      atque nostrum praesentium nisi maxime? Voluptatum natus perspiciatis ullam
+      vel, eius fugit nam architecto veniam repudiandae, cupiditate unde atque
+      aliquid sed soluta perferendis eos ea quo excepturi expedita est odio ut
+      voluptates reprehenderit alias. Ullam repellendus ipsam, rerum dolor
+      provident maiores aut eum iure fugiat ipsum sed veritatis incidunt sequi
+      numquam quaerat placeat consequuntur suscipit exercitationem quo officiis
+      ipsa esse error consequatur. Odio sed dolores vel, soluta hic ut.
+      Praesentium itaque sed magnam accusamus suscipit veniam eligendi, odit
+      animi, neque et voluptatum velit labore, maxime quae at est doloremque
+      illo? Labore consequatur reprehenderit quidem minus consequuntur, delectus
+      est, aliquam eum quam tempora laborum pariatur ratione. Repellat excepturi
+      ea mollitia iure? Est autem labore velit at cumque nisi eum exercitationem
+      voluptas vitae magni culpa corporis, quam assumenda distinctio dignissimos
+      fuga tenetur repellat iure nesciunt quos, dolore doloremque pariatur
+      dolorem! Soluta odit id fugit, doloremque sed porro aliquid perspiciatis
+      sint nihil ipsum quia ex cum nisi possimus rem iste a magnam obcaecati,
+      iusto modi corrupti facere ab autem quos! Asperiores dicta, sint velit
+      enim perferendis corporis quaerat distinctio voluptas. Voluptate ipsa fuga
+      nostrum magni ea ut ratione, ducimus impedit facere vero assumenda optio
+      exercitationem consequatur sunt omnis commodi explicabo. Praesentium velit
+      repellendus voluptates consequuntur nam odit atque perspiciatis incidunt
+      mollitia tempora maiores, dolore adipisci fugit non? Dignissimos nostrum
+      sint necessitatibus nulla porro odit sed? Obcaecati repellendus, voluptas
+      laborum saepe libero tenetur sint maiores praesentium alias iusto illum
+      necessitatibus voluptate itaque veritatis odit? Placeat porro incidunt
+      possimus, expedita optio non numquam vel magni a maxime obcaecati rem ab
+      impedit deleniti, sunt temporibus nesciunt harum! Amet, debitis maiores.
+      Porro molestiae, ab, eaque dolores optio nemo error mollitia quidem
+      accusamus enim dolorem sunt. Cumque nobis fuga repellendus voluptatum
+      recusandae accusantium distinctio nesciunt esse earum at deserunt laborum
+      totam natus, eaque voluptas. Quos suscipit perferendis fugiat voluptatibus
+      optio non ut maiores hic minima expedita iusto provident, nam quis
+      consequuntur. Animi magni cupiditate perferendis mollitia odio nemo sed
+      molestiae, excepturi iusto corrupti libero sunt id quas aut fuga tempore?
+      Nulla ipsam saepe ullam dolore dicta, voluptate voluptates. Reprehenderit
+      odit dolorum est aliquam eveniet? Incidunt amet recusandae sunt
+      consequuntur? Quam quos vitae sequi.
+    </p>
+    <script>
+      //   user age tracker
+
+      let age = Number(prompt("How old are you?"));
+      if (age <= 0) {
+        age = Number(prompt("Please enter a valid age:"));
+      }
+
+      console.log("You are " + age + " years old!");
+
+      //   favourite foods list
+
+      let food = prompt("What is your favourite food?");
+      let list = "";
+      while (food != "no") {
+        food = prompt("Would you like to enter another food?");
+        list = list + food + "; ";
+      }
+      console.log("Your favourite foods are: " + list);
+
+      //   count to a number
+      let num = Number(prompt("Please enter a number: "));
+      for (counter = 1; counter <= num; counter++) {
+        console.log(counter);
+      }
+
+      //  number guessing game
+      guess = Number(prompt("Please guess a number: "));
+      while (guess != 15) {
+        if (guess < 15) {
+          guess = Number(prompt("Your guess is too low, try again: "));
+        } else if (guess > 15) {
+          guess = Number(prompt("Your guess is too high, try again:"));
+        }
+      }
+      console.log("Congratulations! You've guessed the number");
+
+      //   multiplication table
+
+      let input = Number(
+        prompt("Please enter a number to trigger multiplication table")
+      );
+      for (count = 1; count <= 10; count++) {
+        let final = input * count;
+        console.log(input + " x " + count + " = " + final);
+      }
+    </script>
+  </body>
+</html>

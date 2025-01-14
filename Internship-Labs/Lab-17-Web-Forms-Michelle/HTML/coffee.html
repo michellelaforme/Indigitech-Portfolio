@@ -1,0 +1,99 @@
+<!-- Michelle La Forme, IFA WD INT. lab 17, 26 Nov 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee To-Go</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/layout.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Starbuzz Coffee &#9749;</h1>
+    </header>
+    <main>
+      <h2>Bean Machine</h2>
+      <p>Now offering coffee to go, delivered to the comfort of your home.</p>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Coffee options</legend>
+
+          <div class="coffee">
+            <div class="flavour">
+              <label for="beans">Choose your bean flavour:</label>
+              <select name="beans" id="beans">
+                <option value="house">House blend</option>
+                <option value="bolivia">Shade Grown Bolivia Supreme</option>
+                <option value="guatemala">Organic Guatemala</option>
+                <option value="kenya">Kenya</option>
+              </select>
+            </div>
+            <label>Type:</label>
+            <div class="type">
+              <input type="radio" name="type" id="whole" checked />
+              <label for="whole">Whole bean</label>
+              <input type="radio" name="type" id="ground" />
+              <label for="ground">Pre-ground</label>
+            </div>
+            <label>Extras:</label>
+            <div class="extras">
+              <input type="checkbox" name="extra" id="wrap" />
+              <label for="wrap">Gift Wrap</label>
+              <input type="checkbox" name="extra" id="catalog" checked />
+              <label for="catalog">Include catalog with order</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="shipping">
+          <legend>Shipping information</legend>
+
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="First and last name"
+          />
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            name="address"
+            id="address"
+            placeholder="Number and Street Name"
+          />
+          <label for="city">City:</label>
+          <input
+            type="text"
+            name="address2"
+            id="city"
+            placeholder="City, Province"
+          />
+          <label for="country">Country:</label>
+          <input
+            type="text"
+            name="address3"
+            id="country"
+            placeholder="Country"
+            value="Canada"
+          />
+          <label for="post">Postal code:</label>
+          <input type="text" name="address4" id="post" placeholder="A1A 1A1" />
+        </fieldset>
+
+        <fieldset class="other">
+          <legend>Other</legend>
+          <label for="comments">Additional comments or requests:</label>
+          <textarea name="comments" id="comments"></textarea>
+        </fieldset>
+
+        <div class="buttons">
+          <input type="submit" value="Order Now" />
+          <input type="reset" value="Cancel Order" />
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

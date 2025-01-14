@@ -1,0 +1,42 @@
+@charset "utf-8";
+body {
+  background-image: linear-gradient(pink, palevioletred);
+  color: white;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+header,
+footer {
+  background-color: white;
+  color: palevioletred;
+  margin: 1%;
+}
+
+main {
+  border: 4px dashed white;
+}
+h1 {
+  font-size: 3rem;
+  padding: 4%;
+}
+p {
+  padding: 3%;
+}
+article {
+  border: 2px solid black;
+  margin: 1%;
+}
+div {
+  border: 2px solid gray;
+  margin: 1%;
+}
+#results {
+  border: 2px dotted white;
+  margin: 1%;
+}
+ul {
+  list-style-position: inside;
+  list-style-type: "\1F4B0";
+}

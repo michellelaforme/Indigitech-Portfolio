@@ -1,0 +1,132 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 25, 18 December 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Mission - Array Navigation</title>
+  </head>
+  <body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, sed
+    dolorum. Rem voluptatibus obcaecati dolor voluptatem soluta unde natus esse
+    culpa, excepturi eaque? Ut repellat tenetur nemo odit consequatur minus
+    laboriosam assumenda cupiditate? Aperiam voluptatem vel dolor fuga quae
+    dolores quo molestias quod nostrum, atque temporibus a voluptate adipisci.
+    Corporis unde impedit aliquid, non blanditiis nesciunt est neque sint natus
+    tenetur doloremque nobis quidem veritatis obcaecati provident expedita
+    dolore illo, itaque minus repudiandae sapiente explicabo reiciendis.
+    Laborum, molestias. Ipsum reprehenderit voluptatibus dolores laborum
+    voluptates praesentium odit maiores temporibus et perferendis ipsam
+    exercitationem nobis consequatur, quos hic sunt est numquam. Voluptatibus
+    ipsum explicabo corrupti odit qui alias dolor, beatae labore et accusantium
+    accusamus vel? Sed deleniti, molestiae unde, corporis corrupti molestias
+    vitae doloremque recusandae nemo at esse voluptates natus non! Totam autem
+    consectetur reprehenderit eaque culpa asperiores, deserunt impedit tenetur
+    quibusdam officiis itaque ad. Doloremque culpa doloribus incidunt deleniti
+    dolore aperiam facilis dolorum inventore, eos adipisci voluptatum eius
+    consequuntur corporis exercitationem debitis! Fuga similique et doloremque
+    ut. Expedita magni consequuntur deserunt veniam dignissimos inventore ipsum
+    id minus qui, ratione ducimus laboriosam aspernatur recusandae libero quo
+    suscipit deleniti esse excepturi tempora? Exercitationem porro, accusamus
+    sit aspernatur eum mollitia facilis minima magnam voluptatum?
+  </body>
+</html>
+
+<script>
+  // problem 1
+  let spaceModules = [1, 0, 1, 1, 0, 0, 1, 0, 1, 1];
+  let malfunctioning = 0;
+  for (let i = 0; i < spaceModules.length; i++) {
+    if (spaceModules[i] == 0) {
+      malfunctioning++;
+    }
+  }
+  console.log("There are " + malfunctioning + " malfunctioning modules");
+
+  //   problem 2
+  spaceModules = [0, 1, 1, 0, 1, 0, 1, 0, 1, 1];
+  let indexSpot = 0;
+  while (spaceModules[indexSpot] != 1) {
+    indexSpot++;
+  }
+  console.log("The first functional module is in index spot " + indexSpot);
+
+  let lastIndexSpot = spaceModules.length - 1;
+  while (spaceModules[lastIndexSpot] != 1) {
+    lastIndexSpot--;
+  }
+  console.log("The last functional module is in index spot " + lastIndexSpot);
+
+  // problem 3
+  let dockingBays = [0, 0, 1, 0, 0, 1, 0, 1, 0, 0];
+  let index = 0;
+
+  while (dockingBays[index] != 1) {
+    index++;
+  }
+
+  console.log("The nearest docking bay is in index " + index);
+
+  //   problem 4
+  let spaceshipSystem = [1, 0, 1, 1, 1, 0, 0, 1, 1];
+  let fuel = 0;
+  for (let i = 0; i < spaceshipSystem.length; i++) {
+    if (spaceshipSystem[i] == 1) {
+      fuel++;
+    }
+  }
+  console.log("Your fuel efficiency has " + fuel + " functioning modules");
+
+  //   problem 5
+  let modules = [0, 1, 0, 1, 0, 0, 1];
+  let updatedModules = [];
+  let n;
+  for (n = 0; n < modules.length; n++) {
+    if (modules[n] == 0) {
+      updatedModules.push(1);
+    } else {
+      updatedModules.push(modules[n]);
+    }
+  }
+  console.log("Your updated modules list is: " + updatedModules);
+
+  //   problem 6
+  let spaceshipPath = [1, 0, 1, 1, 0, 1, 1, 0, 1, 0];
+  for (let index = 0; index < spaceshipPath.length; index++) {
+    if (spaceshipPath[index] == 1) {
+      console.log(
+        "The status of this module is functional: " + spaceshipPath[index]
+      );
+    } else {
+      console.log(
+        "The status of this module is malfunctioning: " + spaceshipPath[index]
+      );
+    }
+  }
+
+  //   problem 7
+  let systemStatus = [1, 1, 1, 1, 1, 1, 1];
+  let functionalModules = 0;
+  for (let index = 0; index < systemStatus.length; index++) {
+    if (systemStatus[index] == 1) {
+      functionalModules++;
+    } else {
+      console.log("Warning: System malfunction!");
+    }
+  }
+  if (functionalModules == 7) {
+    console.log("All systems go!");
+  }
+
+  console.log(
+    "The number of malfunctioning modules is " +
+      malfunctioning +
+      ". The first functional module is in index spot " +
+      indexSpot +
+      " and the last functional module is in index spot " +
+      lastIndexSpot +
+      ". The total count of functional modules is " +
+      functionalModules +
+      ". All systems go!"
+  );
+</script>

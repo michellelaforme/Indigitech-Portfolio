@@ -1,0 +1,67 @@
+html {
+  background-image: linear-gradient(lightblue, navy);
+  font-family: fantasy;
+  color: whitesmoke;
+  text-align: center;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  padding: 4%;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "title pic"
+    "para pic";
+  padding: 3%;
+  border: 3px dashed white;
+  align-items: center;
+}
+.hero h2 {
+  grid-area: title;
+  font-size: 3rem;
+  font-style: italic;
+}
+.hero p {
+  grid-area: para;
+  font-size: 1.25rem;
+  line-height: 20px;
+}
+.hero img {
+  grid-area: pic;
+}
+#quiz-container {
+  padding: 3%;
+  border: 3px solid white;
+  margin: 2% auto;
+  border-radius: 30px;
+}
+p {
+  line-height: 20px;
+  padding: 2%;
+}
+.disclaimer {
+  font-style: italic;
+}
+h2 {
+  font-size: 2rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 4%;
+}

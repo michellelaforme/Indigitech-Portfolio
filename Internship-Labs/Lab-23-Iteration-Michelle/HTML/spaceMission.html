@@ -1,0 +1,39 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 23, 11 December 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Mission Countdown</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mission Control</h1>
+    </header>
+    <main>
+      <p>
+        Mission control is preparing for liftoff. Are you ready for the
+        countdown?
+      </p>
+    </main>
+
+    <script>
+      for (count = 10; count >= 0; count--) {
+        console.log(count);
+      }
+
+      let ready = prompt("Is mission control ready? (yes/no)");
+
+      while (ready != "yes") {
+        ready = prompt("Is mission control ready now?");
+      }
+
+      let countdown = 10;
+      while (countdown >= 0) {
+        console.log(countdown);
+        countdown--;
+      }
+      console.log("Blast off");
+    </script>
+  </body>
+</html>

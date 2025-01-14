@@ -1,0 +1,40 @@
+<!-- Michelle La Forme, IFA WD INT. Lab 18, 28 November 2024 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Tip Calculator</h1>
+    </header>
+    <main>
+      <p>
+        If you're bad at math but want to make sure you're tipping accurately,
+        this is the page for you. Enter your bill amount before the tip, and the
+        percentage you would like to tip (theoretically, based on the quality of
+        service). The calculator will then tell you the tip amount separately,
+        and then the total amount to pay with the tip included. You're welcome!
+      </p>
+      <p>
+        Bill amount: <input type="text" name="billAmount" id="billAmount" />
+      </p>
+      <p>
+        Tip percentage: <input type="text" name="tipPercent" id="tipPercent" />
+      </p>
+      <button>Calculate</button>
+
+      <p class="standard">
+        15% is standard for normal service. <br />20% is standard for excellent
+        service. <br />Higher than 20% is considered to be top service.
+      </p>
+    </main>
+
+    <footer><p>&copy; Copyright 2024, Michelle's Tip Calculator</footer></p>
+    <script src="../JavaScript/calculator.js"></script>
+  </body>
+</html>
